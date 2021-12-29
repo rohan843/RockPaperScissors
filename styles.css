@@ -7,11 +7,13 @@
     color: hsl(228, 45%, 44%);
 }
 
+html,body{min-height:100%;}
+
 body {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    /* TODO    : Tune the gradient more to the design */
-    background : rgb(31, 55, 86);
-    background : radial-gradient(circle, rgba(31, 55, 86, 1) 15%, rgba(20, 21, 57, 1) 90%);
+    font-family      : 'Barlow Semi Condensed', sans-serif;
+    background       : rgb(31, 55, 86);
+    background       : radial-gradient(circle at 50% -5%, #1f3756, #1f3655, #1d3454, #1c3151, #1a2d4e, #19284a, #172446, #161f42, #151b3f, #15183c, #14163a, #141539);
+    background-repeat: no-repeat;
 }
 
 .no-shadow {
@@ -24,7 +26,78 @@ body {
 
 .rules {
     letter-spacing: 0.2em;
-    position: absolute;
-    bottom: 1em;
-    right: 2em;
+    position      : absolute;
+    bottom        : 1em;
+    right         : 2em;
+}
+
+.BorderRadius {
+    border-radius: 1em;
+}
+
+.header {
+    border      : hsl(217, 16%, 45%) 0.15em solid;
+    font-weight : 700;
+    width       : 50%;
+    margin-top  : 2em !important;
+    padding     : 1em;
+    padding-left: 2em;
+}
+
+.top-margin-remove {
+    margin-top: -0.35em;
+}
+
+.score-text {
+    color         : hsl(229, 64%, 46%);
+    letter-spacing: 0.17em;
+}
+
+.score {
+    color      : hsl(229, 25%, 31%);
+    font-weight: 700;
+    font-size  : 4rem;
+}
+
+.score-board {
+    /* width: 66%; */
+    padding  : 1em;
+    min-width: 12em;
+}
+
+.TextCenter {
+    text-align: center;
+}
+
+.normal-line-height {
+    line-height: normal;
+}
+
+.Row {
+    display: flex;
+}
+
+.Col {
+    display       : flex;
+    flex-direction: column;
+}
+
+.Container {
+    margin: auto;
+}
+
+.JustifySpaceBetween {
+    justify-content: space-between;
+}
+
+.JustifyCenter {
+    justify-content: center;
+}
+
+.AlignCenter {
+    align-items: center;
+}
+
+.h2 {
+    font-size: 2.5rem;
 }
