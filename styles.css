@@ -1,0 +1,14 @@
+.attribution {
+    font-size : 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    /* TODO: Tune the gradient more to the design */
+    background: rgb(31, 55, 86);
+    background: radial-gradient(circle, rgba(31, 55, 86, 1) 15%, rgba(20, 21, 57, 1) 90%);
+}
