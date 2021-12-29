@@ -8,7 +8,23 @@
 }
 
 body {
-    /* TODO: Tune the gradient more to the design */
-    background: rgb(31, 55, 86);
-    background: radial-gradient(circle, rgba(31, 55, 86, 1) 15%, rgba(20, 21, 57, 1) 90%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* TODO    : Tune the gradient more to the design */
+    background : rgb(31, 55, 86);
+    background : radial-gradient(circle, rgba(31, 55, 86, 1) 15%, rgba(20, 21, 57, 1) 90%);
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.rules {
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
 }
