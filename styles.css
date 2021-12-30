@@ -7,12 +7,15 @@
     color: hsl(228, 45%, 44%);
 }
 
-html,body{min-height:100%;}
+html,
+body {
+    min-height: 100%;
+}
 
 body {
     font-family      : 'Barlow Semi Condensed', sans-serif;
     background       : rgb(31, 55, 86);
-    background       : radial-gradient(circle at 50% -5%, #1f3756, #1f3655, #1d3454, #1c3151, #1a2d4e, #19284a, #172446, #161f42, #151b3f, #15183c, #14163a, #141539);
+    background       : radial-gradient(circle at 50% -1%, #1f3756, #1f3655, #1d3454, #1c3151, #1a2d4e, #19284a, #172446, #161f42, #151b3f, #15183c, #14163a, #141539);
     background-repeat: no-repeat;
 }
 
@@ -100,4 +103,47 @@ body {
 
 .h2 {
     font-size: 2.5rem;
+}
+
+.outer-circle {
+    width        : 12em;
+    height       : 12em;
+    border-radius: 100%;
+    position     : relative;
+}
+
+.paper {
+    background: linear-gradient(360deg, #4865f4, #4865f4, #4966f4, #4b67f4, #4c69f4, #4e6af4, #506cf5, #526df5, #536ff5, #5570f5, #5671f5, #5671f5);
+}
+
+.scissor {
+    background: linear-gradient(360deg, #ec9e0e, #ec9e0e, #ed9f0f, #eea10f, #efa211, #eea414, #eea518, #eda61b, #eda71e, #eca820, #eca921, #eca922);
+}
+
+.rock {
+    background: linear-gradient(360deg, #dc2e4e, #dc2e4e, #dc304f, #dc3151, #dc3353, #dc3655, #dd3857, #dd3b59, #dd3d5a, #dd3e5c, #dd405d, #dd405d);
+}
+
+.inner-circle {
+    width           : 10em;
+    height          : 10em;
+    background-color: white;
+    border-radius   : 100%;
+    position        : absolute;
+    left            : 1em;
+    top             : 1em;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.inner-inner-circle {
+    display        : flex;
+    justify-content: center;
+    align-content  : center;
+}
+
+.resize-inner-vector {
+    width : 6em;
+    height: 6em;
 }
