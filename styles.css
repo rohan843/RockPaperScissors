@@ -10,7 +10,7 @@
 html,
 body {
     min-height: 100%;
-    cursor    : url('images/cursor.cur'), default;
+    cursor    : url('images/cursor1.png'), default;
 }
 
 body {
@@ -111,7 +111,7 @@ body {
     height       : 12em;
     border-radius: 100%;
     position     : relative;
-    cursor       : url('images/crosshair.cur'), default;
+    /* cursor       : url('images/pointer.png'), default; */
     z-index      : 10;
 }
 
