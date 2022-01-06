@@ -9,8 +9,7 @@
 
 html,
 body {
-    min-height   : 100%;
-    /* TODO      : Undo this */
+    min-height: 100%;
     cursor    : url('images/cursor.cur'), default;
 }
 
@@ -108,13 +107,12 @@ body {
 }
 
 .outer-circle {
-    width           : 12em;
-    height          : 12em;
-    border-radius   : 100%;
-    position        : relative;
-    /* TODO         : Undo this */
+    width        : 12em;
+    height       : 12em;
+    border-radius: 100%;
+    position     : relative;
     cursor       : url('images/crosshair.cur'), default;
-    z-index         : 10;
+    z-index      : 10;
 }
 
 .paper {
@@ -177,3 +175,46 @@ body {
 }
 
 .triangle-svg {}
+
+
+/* To use above code for some range, just comment out that media query (or leave it empty) */
+@media (min-height: 1400px) {
+    /* Height > 1400px */
+}
+
+@media (max-height: 1400px) and (min-height: 1200px) {
+    /* 1200px < height <=  1400px*/
+}
+
+@media (max-height: 1200px) and (min-height: 768px) {
+    /* 768px < height <=  1200px*/
+}
+
+@media (max-height: 768px) and (min-height: 576px) {
+    /* 576px < height <=  768px*/
+}
+
+@media (max-height: 576px) {
+    /* height <= 576px */
+}
+
+/* To use above code for some range, just comment out that media query (or leave it empty) */
+@media (min-width: 1400px) {
+    /* width > 1400px */
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+    /* 1200px < width <=  1400px*/
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    /* 768px < width <=  1200px*/
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+    /* 576px < width <=  768px*/
+}
+
+@media (max-width: 576px) {
+    /* width <= 576px */
+}
