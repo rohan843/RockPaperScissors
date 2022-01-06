@@ -10,7 +10,7 @@
 html,
 body {
     min-height: 100%;
-    cursor: url('images/cursor.cur'), default;
+    cursor    : url('images/cursor.cur'), default;
 }
 
 body {
@@ -111,7 +111,7 @@ body {
     height       : 12em;
     border-radius: 100%;
     position     : relative;
-    
+    cursor       : url('images/crosshair.cur'), default;
 }
 
 .paper {
@@ -140,7 +140,7 @@ body {
     display         : flex;
     justify-content : center;
     align-items     : center;
-    box-shadow: inset 0px 9px 0px -1px #dddddd;
+    box-shadow      : inset 0px 9px 0px -1px #dddddd;
 }
 
 .inner-inner-circle {
@@ -153,3 +153,5 @@ body {
     width : 6em;
     height: 6em;
 }
+
+.central-triangle {}
