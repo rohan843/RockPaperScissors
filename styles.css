@@ -9,7 +9,8 @@
 
 html,
 body {
-    min-height: 100%;
+    min-height   : 100%;
+    /* TODO      : Undo this */
     cursor    : url('images/cursor.cur'), default;
 }
 
@@ -107,26 +108,37 @@ body {
 }
 
 .outer-circle {
-    width        : 12em;
-    height       : 12em;
-    border-radius: 100%;
-    position     : relative;
+    width           : 12em;
+    height          : 12em;
+    border-radius   : 100%;
+    position        : relative;
+    /* TODO         : Undo this */
     cursor       : url('images/crosshair.cur'), default;
+    z-index         : 10;
 }
 
 .paper {
     background: linear-gradient(360deg, #4865f4, #4865f4, #4966f4, #4b67f4, #4c69f4, #4e6af4, #506cf5, #526df5, #536ff5, #5570f5, #5671f5, #5671f5);
     box-shadow: 0px 8px 0px -2px #233dbf;
+    position  : absolute;
+    top       : -5em;
+    left      : -4em;
 }
 
 .scissor {
     background: linear-gradient(360deg, #ec9e0e, #ec9e0e, #ed9f0f, #eea10f, #efa211, #eea414, #eea518, #eda61b, #eda71e, #eca820, #eca921, #eca922);
     box-shadow: 0px 8px 0px -2px #a37625;
+    position  : absolute;
+    top       : -5em;
+    left      : 11em;
 }
 
 .rock {
     background: linear-gradient(360deg, #dc2e4e, #dc2e4e, #dc304f, #dc3151, #dc3353, #dc3655, #dd3857, #dd3b59, #dd3d5a, #dd3e5c, #dd405d, #dd405d);
     box-shadow: 0px 8px 0px -2px #950f27;
+    position  : absolute;
+    top       : 9em;
+    left      : 3em;
 }
 
 .inner-circle {
@@ -154,4 +166,14 @@ body {
     height: 6em;
 }
 
-.central-triangle {}
+.central-triangle {
+    position       : absolute;
+    top            : 50%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin         : 0 50%;
+    transform      : translateX(-50%);
+}
+
+.triangle-svg {}
