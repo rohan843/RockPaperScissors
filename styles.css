@@ -111,18 +111,22 @@ body {
     height       : 12em;
     border-radius: 100%;
     position     : relative;
+    
 }
 
 .paper {
     background: linear-gradient(360deg, #4865f4, #4865f4, #4966f4, #4b67f4, #4c69f4, #4e6af4, #506cf5, #526df5, #536ff5, #5570f5, #5671f5, #5671f5);
+    box-shadow: 0px 8px 0px -2px #233dbf;
 }
 
 .scissor {
     background: linear-gradient(360deg, #ec9e0e, #ec9e0e, #ed9f0f, #eea10f, #efa211, #eea414, #eea518, #eda61b, #eda71e, #eca820, #eca921, #eca922);
+    box-shadow: 0px 8px 0px -2px #a37625;
 }
 
 .rock {
     background: linear-gradient(360deg, #dc2e4e, #dc2e4e, #dc304f, #dc3151, #dc3353, #dc3655, #dd3857, #dd3b59, #dd3d5a, #dd3e5c, #dd405d, #dd405d);
+    box-shadow: 0px 8px 0px -2px #950f27;
 }
 
 .inner-circle {
@@ -136,6 +140,7 @@ body {
     display         : flex;
     justify-content : center;
     align-items     : center;
+    box-shadow: inset 0px 9px 0px -1px #dddddd;
 }
 
 .inner-inner-circle {
