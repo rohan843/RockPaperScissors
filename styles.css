@@ -10,6 +10,7 @@
 html,
 body {
     min-height: 100%;
+    cursor: url('images/cursor.cur'), default;
 }
 
 body {
